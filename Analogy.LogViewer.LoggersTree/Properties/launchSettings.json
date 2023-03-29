@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "Analogy.LogViewer.LoggersTree": {
+      "commandName": "Project"
+    },
+    "Analogy Release": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Projects\\Platypus\\Analogy.LogViewer\\Analogy.LogViewer\\Analogy\\bin\\Release\\net6.0-windows\\Analogy.exe",
+      "workingDirectory": "D:\\Projects\\Platypus\\Analogy.LogViewer\\Analogy.LogViewer\\Analogy\\bin\\Release\\net6.0-windows"
+    },
+    "Analogy Debug": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Projects\\Platypus\\Analogy.LogViewer\\Analogy.LogViewer\\Analogy\\bin\\Debug\\net6.0-windows\\Analogy.exe",
+      "workingDirectory": "D:\\Projects\\Platypus\\Analogy.LogViewer\\Analogy.LogViewer\\Analogy\\bin\\Debug\\net6.0-windows"
+    }
+  }
+}
