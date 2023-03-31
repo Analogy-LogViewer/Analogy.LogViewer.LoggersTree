@@ -1,5 +1,18 @@
 # Analogy Loggers Tree 
 
+
+![.NET Core Desktop](https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree/workflows/.NET%20Core%20Desktop/badge.svg)
+<a href="https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree/issues">
+    <img src="https://img.shields.io/github/issues/Analogy-LogViewer/Analogy.LogViewer.LoggersTree"  alt="Issues" />
+</a>
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Analogy-LogViewer/Analogy.LogViewer.LoggersTree)
+<a href="https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/Analogy-LogViewer/Analogy.LogViewer.LoggersTree" img alt="License"/>
+</a>
+[![Nuget](https://img.shields.io/nuget/v/Analogy.LogViewer.LoggersTree)](https://www.nuget.org/packages/Analogy.LogViewer.LoggersTree/)
+[![Nuget](https://img.shields.io/nuget/dt/Analogy.LogViewer.LoggersTree)](https://www.nuget.org/packages/Analogy.LogViewer.LoggersTree/)
+
+
 Display a tree of of available loggers in corresponding log window, each logger can be individually filtered by level.
 
 ![Screenshot](screenshot.png)
