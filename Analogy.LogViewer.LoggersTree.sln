@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Analogy.LogViewer.LoggersTree", "Analogy.LogViewer.LoggersTree\Analogy.LogViewer.LoggersTree.csproj", "{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54E337D5-FE0A-4F32-A4A4-F19B90F5832D}
+	EndGlobalSection
+EndGlobal
