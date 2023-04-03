@@ -8,6 +8,7 @@ using System.Timers;
 using System.Windows.Forms;
 using Analogy.Interfaces;
 using Analogy.LogViewer.LoggersTree.Properties;
+using Analogy.LogViewer.LoggersTree.Utils;
 using DevExpress.Skins;
 using DevExpress.XtraBars.Docking;
 
@@ -101,7 +102,8 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             TreeNode node = TrvLoggers.Nodes.Find(log.ProcessKey, false).FirstOrDefault();
             if (node == null)
                 return;
-            string[] path = log.Source.Split('.');
+            string[] generics = log.Source.Split('`');
+            string[] path = generics[0].Split('.');
             for (int i = 0; i < path.Length - 1; i++)
             {
                 string current = string.Empty;
@@ -199,7 +201,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                 if (root != null)
                     CreateQuery(root, LogLevel.All);
             }
-            TxtQuery.Text = _overloadedQuery;
+            TxtQuery.Text = SqlPrettify.Pretty(_overloadedQuery);
             if (_overloadedQuery != null)
                 _parent?.ApplyRawSQLFilter(_overloadedQuery);
         }
@@ -214,12 +216,13 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                 if (data.Length != 2)
                     throw new NotSupportedException($"ProcessKey is malformed: {root.Text}");
                 string processQuery = $"([MachineName] = '{data.First()}' AND Module = '{data.Last()}')";
+                string nodeTextEscaped = node.Text.Replace("[", "[[]").Replace("=", "[=]");
                 if (level == LogLevel.Off)
                 {
                     if (root == node)
                         _overloadedQuery += $" AND NOT {processQuery}";
                     else
-                        _overloadedQuery += $" AND ((Source not like '{node.Text}%') OR not {processQuery})";
+                        _overloadedQuery += $" AND ((Source not like '{nodeTextEscaped}%') OR not {processQuery})";
                 }
                 else
                 {
@@ -227,7 +230,12 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                     if (root == node)
                         _overloadedQuery += $" AND ((({levelQuery}) AND {processQuery}) OR not {processQuery})";
                     else
-                        _overloadedQuery += $" AND ((Source like '{node.Text}%' AND ({levelQuery}) AND {processQuery}) OR Source not like '{node.Text}%' OR not {processQuery})";
+                    {
+                        if (parentLevel != LogLevel.Off && level <= parentLevel)
+                            _overloadedQuery += $" AND ((Source like '{nodeTextEscaped}%' AND ({levelQuery}) AND {processQuery}) OR Source not like '{nodeTextEscaped}%' OR not {processQuery})";
+                        else
+                            _overloadedQuery += $" OR (Source like '{nodeTextEscaped}%' AND ({levelQuery}) AND {processQuery})";
+                    }
                 }
             }
             foreach (TreeNode child in node.Nodes)
