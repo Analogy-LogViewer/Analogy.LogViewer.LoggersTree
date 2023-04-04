@@ -38,8 +38,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         Task IAnalogyExtensionUserControl.InitializeUserControl(Control hostingControl, Guid logWindowsId, IAnalogyLogger logger)
         {
             (GetUserControl(logWindowsId) as UcLoggersTree)?.Init();
-            ILogRawSQL logRawSQL = hostingControl as ILogRawSQL;
-            if (logRawSQL != null)
+            if (hostingControl is ILogRawSQL logRawSQL)
                 (GetUserControl(logWindowsId) as UcLoggersTree)?.SetLogRawSQL(logRawSQL);
             return Task.CompletedTask;
         }

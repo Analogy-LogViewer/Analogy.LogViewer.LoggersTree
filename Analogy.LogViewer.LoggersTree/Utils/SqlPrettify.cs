@@ -8,7 +8,7 @@ namespace Analogy.LogViewer.LoggersTree.Utils
 {
     public class SqlPrettify
     {
-        public static string Pretty(string q)
+        public static string Pretty(string? q)
         {
             q += " ";
             int num1 = 0;

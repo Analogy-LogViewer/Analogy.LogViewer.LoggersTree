@@ -12,8 +12,8 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         public override Guid FactoryId { get; set; } = Id;
 
         public override string Title { get; set; } = "Loggers tree";
-        public override Image SmallImage { get; set; } = Resources.Analogy_image_16x16;
-        public override Image LargeImage { get; set; } = Resources.Analogy_image_32x32;
+        public override Image? SmallImage { get; set; } = Resources.Analogy_image_16x16;
+        public override Image? LargeImage { get; set; } = Resources.Analogy_image_32x32;
 
         public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = new List<AnalogyChangeLog>
         {

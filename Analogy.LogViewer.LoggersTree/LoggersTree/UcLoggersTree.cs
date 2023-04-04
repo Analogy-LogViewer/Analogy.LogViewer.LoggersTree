@@ -17,13 +17,13 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
     public partial class UcLoggersTree : UserControl
     {
 
-        private ILogRawSQL _parent;
-        private string _currentQuery;
-        private string _overloadedQuery;
+        private ILogRawSQL? _parent;
+        private string? _currentQuery;
+        private string? _overloadedQuery;
         private readonly ConcurrentQueue<IAnalogyLogMessage> _msgQueue;
         private readonly System.Timers.Timer _timer;
-        private DockPanel _dockPanel;
-        private ControlContainer _container;
+        private DockPanel? _dockPanel;
+        private ControlContainer? _container;
 
         enum LogLevel
         {
@@ -75,12 +75,12 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         }
 
 
-        private void ReadQueue(object sender, ElapsedEventArgs elapsedEventArgs)
+        private void ReadQueue(object? sender, ElapsedEventArgs elapsedEventArgs)
         {
             _timer.Stop();
             for (int i = 0; i < 500; i++)
             {
-                if (!_msgQueue.TryDequeue(out IAnalogyLogMessage message))
+                if (!_msgQueue.TryDequeue(out IAnalogyLogMessage? message))
                 {
                     _timer.Start();
                     return;
@@ -99,7 +99,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             {
                 TrvLoggers.Nodes.Add(log.ProcessKey, log.ProcessKey, (int)LogLevel.All);
             }
-            TreeNode node = TrvLoggers.Nodes.Find(log.ProcessKey, false).FirstOrDefault();
+            TreeNode? node = TrvLoggers.Nodes.Find(log.ProcessKey, false).FirstOrDefault();
             if (node == null)
                 return;
             string[] generics = log.Source.Split('`');
@@ -148,7 +148,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             _parent.OnRawSQLFilterChanged += Parent_OnSetRawSQLFilter;
         }
 
-        private void Parent_OnSetRawSQLFilter(object sender, string query)
+        private void Parent_OnSetRawSQLFilter(object? sender, string query)
         {
             if (query != _overloadedQuery)
                 _currentQuery = query;
@@ -329,7 +329,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             }
         }
 
-        private void _dockPanel_Resize(object sender, EventArgs e)
+        private void _dockPanel_Resize(object? sender, EventArgs e)
         {
             if (_dockPanel != null && _container != null)
                 Size = new Size(_dockPanel.Size.Width - _container.Margin.Left - _container.Margin.Right, _dockPanel.Size.Height - _container.Margin.Top - _container.Margin.Bottom);

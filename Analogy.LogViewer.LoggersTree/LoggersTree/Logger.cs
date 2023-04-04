@@ -4,9 +4,9 @@
     {
         public static char Separator = ':';
 
-        public string Source { get; set; }
-        public string Machine { get; set; }
-        public string ProcessName { get; set; }
+        public string? Source { get; set; }
+        public string? Machine { get; set; }
+        public string? ProcessName { get; set; }
 
         public string ProcessKey
         {

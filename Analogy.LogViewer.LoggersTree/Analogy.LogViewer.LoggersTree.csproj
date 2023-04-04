@@ -13,18 +13,25 @@
 		<Product>Analogy.LogViewer.LoggersTree</Product>
 		<PackageId>Analogy.LogViewer.LoggersTree</PackageId>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 		<Copyright>CAMAG © 2023</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://cmmsesrv01/CAMAG/Platypus/_git/Analogy.LogViewer.LoggersTree</PackageProjectUrl>
-		<RepositoryUrl>https://cmmsesrv01/CAMAG/Platypus/_git/Analogy.LogViewer.LoggersTree</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageIconUrl />
 		<Description>Loggers tree extension</Description>
 		<PackageReleaseNotes>Improvements</PackageReleaseNotes>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
-		<Nullable>disable</Nullable>
-		<LangVersion>8.0</LangVersion>
+
+
+
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
 		<Version>1.0.2</Version>
 	</PropertyGroup>
 
