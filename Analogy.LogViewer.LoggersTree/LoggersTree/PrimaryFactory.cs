@@ -17,6 +17,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
 
         public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = new List<AnalogyChangeLog>
         {
+            new AnalogyChangeLog("Corrected loggers' name in case of C# generics, corrected SQL generation, prettified displayed SQL",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 04, 04)),
             new AnalogyChangeLog("Corrected query and added auto resize",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 03, 22))
         };
         public override IEnumerable<string> Contributors { get; set; } = new List<string> { "CAMAG" };

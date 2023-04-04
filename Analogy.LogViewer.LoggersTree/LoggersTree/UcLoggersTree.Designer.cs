@@ -201,12 +201,16 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             // 
             // TxtQuery
             // 
+            TxtQuery.AcceptsReturn = true;
+            TxtQuery.AcceptsTab = true;
             TxtQuery.Dock = System.Windows.Forms.DockStyle.Fill;
             TxtQuery.Location = new System.Drawing.Point(0, 0);
             TxtQuery.Multiline = true;
             TxtQuery.Name = "TxtQuery";
+            TxtQuery.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             TxtQuery.Size = new System.Drawing.Size(733, 102);
             TxtQuery.TabIndex = 5;
+            TxtQuery.WordWrap = false;
             // 
             // UcLoggersTree
             // 
