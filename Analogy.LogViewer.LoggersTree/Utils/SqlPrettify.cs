@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Analogy.LogViewer.LoggersTree.Utils
 {
@@ -60,21 +61,14 @@ namespace Analogy.LogViewer.LoggersTree.Utils
                     str4 += " ";
             }
             q = str4;
-            foreach (char ch in q)
+            bool isText = false;
+            for (int index = 0; index < q.Length; index++)
             {
-                int num3;
-                switch (ch)
-                {
-                    case '\n':
-                    case '\r':
-                    case ' ':
-                        num3 = 0;
-                        break;
-                    default:
-                        num3 = ch != '\t' ? 1 : 0;
-                        break;
-                }
-                if (num3 != 0)
+                char ch = q[index];
+                bool isSpace = ch == '\n' || ch == '\r' || ch == ' ' || ch == '\t';
+                if (ch == '\'' && q[index - 1] != '\\')
+                    isText = !isText;
+                if (!isSpace || isText)
                 {
                     str3 += ch.ToString();
                     if (ch == '(')
