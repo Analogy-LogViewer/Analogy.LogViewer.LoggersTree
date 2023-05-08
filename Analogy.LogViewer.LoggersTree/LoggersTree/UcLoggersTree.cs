@@ -74,11 +74,10 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             _timer.Start();
         }
 
-
-        private void ReadQueue(object? sender, ElapsedEventArgs elapsedEventArgs)
+        private void ReadAll()
         {
-            _timer.Stop();
-            for (int i = 0; i < 500; i++)
+            int sleep = 0;
+            for (int i = 0; i < _msgQueue.Count; i++)
             {
                 if (!_msgQueue.TryDequeue(out IAnalogyLogMessage? message))
                 {
@@ -86,9 +85,21 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                     return;
                 }
                 TrvLoggers.BeginInvoke((MethodInvoker)delegate { AppendMessage(message); });
+                sleep++;
+                if (sleep >= 500)
+                {
+                    Thread.Sleep(100);
+                    sleep = 0;
+                }
             }
             TrvLoggers.BeginInvoke((MethodInvoker)delegate { TrvLoggers.ExpandAll(); });
-            Thread.Sleep(100);
+        }
+
+
+        private void ReadQueue(object? sender, ElapsedEventArgs elapsedEventArgs)
+        {
+            _timer.Stop();
+            ReadAll();
             _timer.Start();
         }
 
