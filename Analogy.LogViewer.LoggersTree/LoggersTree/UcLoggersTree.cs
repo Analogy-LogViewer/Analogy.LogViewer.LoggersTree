@@ -113,21 +113,25 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             TreeNode? node = TrvLoggers.Nodes.Find(log.ProcessKey, false).FirstOrDefault();
             if (node == null)
                 return;
-            string[] generics = log.Source.Split('`');
-            string[] path = generics[0].Split('.');
-            for (int i = 0; i < path.Length - 1; i++)
+            string[] generics = log.Source?.Split('`') ?? new string[] { };
+            if (generics.Any())
             {
-                string current = string.Empty;
-                for (int j = 0; j <= i; j++)
+                string[] path = generics[0].Split('.');
+                for (int i = 0; i < path.Length - 1; i++)
                 {
-                    if (current != String.Empty)
-                        current += ".";
-                    current += path[j];
+                    string current = string.Empty;
+                    for (int j = 0; j <= i; j++)
+                    {
+                        if (current != String.Empty)
+                            current += ".";
+                        current += path[j];
+                    }
+
+                    if (!node.Nodes.ContainsKey(current))
+                        node = node.Nodes.Add(current, current, (int)LogLevel.All);
+                    else
+                        node = node.Nodes.Find(current, false).Single();
                 }
-                if (!node.Nodes.ContainsKey(current))
-                    node = node.Nodes.Add(current, current, (int)LogLevel.All);
-                else
-                    node = node.Nodes.Find(current, false).Single();
             }
             if (!node.Nodes.ContainsKey(log.Source))
             {

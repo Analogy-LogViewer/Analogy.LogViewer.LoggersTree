@@ -16,9 +16,10 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         public override Image? LargeImage { get; set; } = Resources.Analogy_image_32x32;
 
         public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = new List<AnalogyChangeLog>
-        {
-            new AnalogyChangeLog("Corrected loggers' name in case of C# generics, corrected SQL generation, prettified displayed SQL",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 04, 04)),
-            new AnalogyChangeLog("Corrected query and added auto resize",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 03, 22))
+        {            
+            new AnalogyChangeLog("Update Nuget dependencies",AnalogChangeLogType.None, "Lior Banai",new DateTime(2023, 08, 04), ""),
+            new AnalogyChangeLog("Corrected loggers' name in case of C# generics, corrected SQL generation, prettified displayed SQL",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 04, 04), ""),
+            new AnalogyChangeLog("Corrected query and added auto resize",AnalogChangeLogType.Bug, "CAMAG",new DateTime(2023, 03, 22), "")
         };
         public override IEnumerable<string> Contributors { get; set; } = new List<string> { "CAMAG" };
         public override string About { get; set; } = "Loggers tree";
