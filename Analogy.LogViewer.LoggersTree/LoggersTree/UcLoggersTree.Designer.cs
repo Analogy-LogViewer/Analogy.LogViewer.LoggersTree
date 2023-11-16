@@ -84,7 +84,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             allToolStripMenuItem.Name = "allToolStripMenuItem";
             allToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             allToolStripMenuItem.Text = "All";
-            allToolStripMenuItem.Click += allToolStripMenuItem_Click;
+            allToolStripMenuItem.Click += AllToolStripMenuItem_Click;
             // 
             // verboseToolStripMenuItem
             // 
@@ -92,7 +92,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             verboseToolStripMenuItem.Name = "verboseToolStripMenuItem";
             verboseToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             verboseToolStripMenuItem.Text = "Verbose";
-            verboseToolStripMenuItem.Click += verboseToolStripMenuItem_Click;
+            verboseToolStripMenuItem.Click += VerboseToolStripMenuItem_Click;
             // 
             // traceToolStripMenuItem
             // 
@@ -100,7 +100,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             traceToolStripMenuItem.Name = "traceToolStripMenuItem";
             traceToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             traceToolStripMenuItem.Text = "Trace";
-            traceToolStripMenuItem.Click += traceToolStripMenuItem_Click;
+            traceToolStripMenuItem.Click += TraceToolStripMenuItem_Click;
             // 
             // debugToolStripMenuItem
             // 
@@ -108,7 +108,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             debugToolStripMenuItem.Name = "debugToolStripMenuItem";
             debugToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             debugToolStripMenuItem.Text = "Debug";
-            debugToolStripMenuItem.Click += debugToolStripMenuItem_Click;
+            debugToolStripMenuItem.Click += DebugToolStripMenuItem_Click;
             // 
             // informationToolStripMenuItem
             // 
@@ -116,7 +116,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             informationToolStripMenuItem.Name = "informationToolStripMenuItem";
             informationToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             informationToolStripMenuItem.Text = "Information";
-            informationToolStripMenuItem.Click += informationToolStripMenuItem_Click;
+            informationToolStripMenuItem.Click += InformationToolStripMenuItem_Click;
             // 
             // warningToolStripMenuItem
             // 
@@ -124,7 +124,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             warningToolStripMenuItem.Name = "warningToolStripMenuItem";
             warningToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             warningToolStripMenuItem.Text = "Warning";
-            warningToolStripMenuItem.Click += warningToolStripMenuItem_Click;
+            warningToolStripMenuItem.Click += WarningToolStripMenuItem_Click;
             // 
             // errorToolStripMenuItem
             // 
@@ -132,7 +132,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             errorToolStripMenuItem.Name = "errorToolStripMenuItem";
             errorToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             errorToolStripMenuItem.Text = "Error";
-            errorToolStripMenuItem.Click += errorToolStripMenuItem_Click;
+            errorToolStripMenuItem.Click += ErrorToolStripMenuItem_Click;
             // 
             // criticalToolStripMenuItem
             // 
@@ -140,7 +140,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             criticalToolStripMenuItem.Name = "criticalToolStripMenuItem";
             criticalToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             criticalToolStripMenuItem.Text = "Critical";
-            criticalToolStripMenuItem.Click += criticalToolStripMenuItem_Click;
+            criticalToolStripMenuItem.Click += CriticalToolStripMenuItem_Click;
             // 
             // offToolStripMenuItem
             // 
@@ -148,7 +148,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             offToolStripMenuItem.Name = "offToolStripMenuItem";
             offToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             offToolStripMenuItem.Text = "Off";
-            offToolStripMenuItem.Click += offToolStripMenuItem_Click;
+            offToolStripMenuItem.Click += OffToolStripMenuItem_Click;
             // 
             // Split
             // 

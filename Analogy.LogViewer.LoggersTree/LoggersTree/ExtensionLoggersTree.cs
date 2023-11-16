@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Analogy.Interfaces;
-using Microsoft.Extensions.Logging;
 
 namespace Analogy.LogViewer.LoggersTree.LoggersTree
 {
@@ -16,34 +16,35 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         public string AuthorMail { get; set; } = "info@camag.com";
         public List<string> AdditionalContributors { get; } = new List<string>(0);
         public abstract string Description { get; set; }
-        private readonly Dictionary<Guid, UserControl> _userControls;
+        private readonly Dictionary<Guid, UserControl> userControls;
 
         protected ExtensionLoggersTree()
         {
-            _userControls = new Dictionary<Guid, UserControl>();
+            userControls = new Dictionary<Guid, UserControl>();
         }
-
 
         public UserControl CreateUserControl(Guid logWindowsId, ILogger logger)
         {
             UcLoggersTree control = new UcLoggersTree();
-            _userControls.Add(logWindowsId, control);
+            userControls.Add(logWindowsId, control);
             return control;
         }
 
         public UserControl GetUserControl(Guid logWindowsId)
         {
-            return _userControls[logWindowsId];
+            return userControls[logWindowsId];
         }
 
         Task IAnalogyExtensionUserControl.InitializeUserControl(Control hostingControl, Guid logWindowsId, ILogger logger)
         {
             (GetUserControl(logWindowsId) as UcLoggersTree)?.Init();
             if (hostingControl is ILogRawSQL logRawSQL)
+            {
                 (GetUserControl(logWindowsId) as UcLoggersTree)?.SetLogRawSQL(logRawSQL);
+            }
+
             return Task.CompletedTask;
         }
-        
 
         public virtual void NewMessage(IAnalogyLogMessage message, Guid logWindowsId)
         {

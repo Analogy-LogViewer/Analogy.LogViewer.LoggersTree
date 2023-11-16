@@ -2,7 +2,7 @@
 {
     internal class Logger
     {
-        public static char Separator = ':';
+        public static char Separator => ':';
 
         public string? Source { get; set; }
         public string? Machine { get; set; }
@@ -10,7 +10,7 @@
 
         public string ProcessKey
         {
-            get { return Machine?.ToLower() + Separator + ProcessName?.ToLower(); }
+            get { return Machine?.ToLowerInvariant() + Separator + ProcessName?.ToLowerInvariant(); }
         }
 
         public string SourceKey

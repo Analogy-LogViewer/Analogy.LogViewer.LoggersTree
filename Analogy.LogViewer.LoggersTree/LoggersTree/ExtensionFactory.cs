@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
+using System;
+using System.Collections.Generic;
 
 namespace Analogy.LogViewer.LoggersTree.LoggersTree
 {
@@ -10,6 +10,6 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
     {
         public Guid FactoryId { get; set; } = PrimaryFactory.Id;
         public string Title { get; set; } = "Loggers tree extension";
-        public IEnumerable<IAnalogyExtension> Extensions { get; } = new List<IAnalogyExtension> { new ExtensionLoggersTreeSerilog(), new ExtensionLoggersTreeLog4jXml()};
+        public IEnumerable<IAnalogyExtension> Extensions { get; } = new List<IAnalogyExtension> { new ExtensionLoggersTreeSerilog(), new ExtensionLoggersTreeLog4jXml() };
     }
 }
