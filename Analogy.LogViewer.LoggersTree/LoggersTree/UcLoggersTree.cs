@@ -26,6 +26,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         private readonly System.Timers.Timer timer;
         private DockPanel? dockPanel;
         private ControlContainer? container;
+        private bool isInitialized;
 
         private enum LogLevel
         {
@@ -93,7 +94,11 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                     sleep = 0;
                 }
             }
-            TrvLoggers.BeginInvoke((MethodInvoker)(() => { TrvLoggers.ExpandAll(); }));
+            if (!isInitialized)
+            {
+                TrvLoggers.BeginInvoke((MethodInvoker)(() => { TrvLoggers.ExpandAll(); }));
+            }
+            isInitialized = true;
         }
 
         private void ReadQueue(object? sender, ElapsedEventArgs elapsedEventArgs)
