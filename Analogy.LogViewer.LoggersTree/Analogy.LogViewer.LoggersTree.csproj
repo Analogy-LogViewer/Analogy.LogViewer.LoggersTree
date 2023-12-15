@@ -63,26 +63,26 @@
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows'  or '$(TargetFramework)' == 'net7.0-windows' or '$(TargetFramework)' == 'net8.0-windows' ">
-		<Reference Include="DevExpress.Utils.v21.2">
-			<HintPath>..\DevExpress\.net core\DevExpress.Utils.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.Utils.v23.1">
+			<HintPath>..\DevExpress\.net core\DevExpress.Utils.v23.1.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
-		<Reference Include="DevExpress.XtraBars.v21.2">
-			<HintPath>..\DevExpress\.net core\DevExpress.XtraBars.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.XtraBars.v23.1">
+			<HintPath>..\DevExpress\.net core\DevExpress.XtraBars.v23.1.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net48' or '$(TargetFramework)' == 'net472' or '$(TargetFramework)' == 'net471' ">
-		<Reference Include="DevExpress.Utils.v21.2">
-			<HintPath>..\DevExpress\.net framework\DevExpress.Utils.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.Utils.v23.1">
+			<HintPath>..\DevExpress\.net framework\DevExpress.Utils.v23.1.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
-		<Reference Include="DevExpress.XtraBars.v21.2">
-			<HintPath>..\DevExpress\.net framework\DevExpress.XtraBars.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.XtraBars.v23.1">
+			<HintPath>..\DevExpress\.net framework\DevExpress.XtraBars.v23.1.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
