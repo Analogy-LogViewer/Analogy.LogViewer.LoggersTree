@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 
@@ -26,6 +27,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
         private readonly System.Timers.Timer timer;
         private DockPanel? dockPanel;
         private ControlContainer? container;
+        private bool isInitialized;
 
         private enum LogLevel
         {
@@ -77,6 +79,10 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
 
         private void ReadAll()
         {
+            if (IsDisposed)
+            {
+                return;
+            }
             int sleep = 0;
             for (int i = 0; i < MsgQueue.Count; i++)
             {
@@ -93,7 +99,18 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
                     sleep = 0;
                 }
             }
-            TrvLoggers.BeginInvoke((MethodInvoker)(() => { TrvLoggers.ExpandAll(); }));
+            if (!isInitialized)
+            {
+#pragma warning disable MA0134
+                Task.Factory.StartNew(() =>
+                {
+                    //wait for UI to be ready
+                    Thread.Sleep(5000);
+                    TrvLoggers.BeginInvoke((MethodInvoker)(() => { TrvLoggers.ExpandAll(); }));
+                }, TaskCreationOptions.LongRunning);
+#pragma warning restore MA0134
+            }
+            isInitialized = true;
         }
 
         private void ReadQueue(object? sender, ElapsedEventArgs elapsedEventArgs)
