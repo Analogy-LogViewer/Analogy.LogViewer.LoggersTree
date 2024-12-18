@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace Analogy.LogViewer.LoggersTree.Utils
 {
-    public class SqlPrettify
+    public static class SqlPrettify
     {
         public static string Pretty(string? q)
         {
