@@ -13,7 +13,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageIconUrl />
 		<Description>Loggers tree extension</Description>
-		<VersionPrefix>4.1.0</VersionPrefix>
+		<VersionPrefix>4.2.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 	</PropertyGroup>
 
@@ -49,9 +49,9 @@
 	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.CommonUtilities" Version="7.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="7.1.0" />
+		<PackageReference Include="Analogy.CommonUtilities" Version="7.2.0" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.2.0" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="7.2.0" />
 		<PackageReference Include="System.Resources.Extensions" Version="9.0.0" />
 	</ItemGroup>
 
