@@ -1,4 +1,5 @@
 ﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.LoggersTree.Properties;
 using Analogy.LogViewer.LoggersTree.Utils;
 using DevExpress.Skins;

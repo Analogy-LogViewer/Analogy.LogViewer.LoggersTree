@@ -13,7 +13,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageIconUrl />
 		<Description>Loggers tree extension</Description>
-		<VersionPrefix>4.2.0</VersionPrefix>
+		<VersionPrefix>5.0.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 	</PropertyGroup>
 
@@ -49,10 +49,10 @@
 	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.CommonUtilities" Version="7.2.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.2.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="7.2.0" />
-		<PackageReference Include="System.Resources.Extensions" Version="9.0.0" />
+		<PackageReference Include="Analogy.CommonUtilities" Version="8.0.0" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="8.0.0" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="8.0.0" />
+		<PackageReference Include="System.Resources.Extensions" Version="9.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -63,26 +63,26 @@
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0-windows'  or '$(TargetFramework)' == 'net9.0-windows' ">
-		<Reference Include="DevExpress.Utils.v21.2">
-			<HintPath>..\DevExpress\.net core\DevExpress.Utils.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.Utils.v24.2">
+			<HintPath>..\DevExpress\.net core\DevExpress.Utils.v24.2.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
-		<Reference Include="DevExpress.XtraBars.v21.2">
-			<HintPath>..\DevExpress\.net core\DevExpress.XtraBars.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.XtraBars.v24.2">
+			<HintPath>..\DevExpress\.net core\DevExpress.XtraBars.v24.2.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
-		<Reference Include="DevExpress.Utils.v21.2">
-			<HintPath>..\DevExpress\.net framework\DevExpress.Utils.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.Utils.v24.2">
+			<HintPath>..\DevExpress\.net framework\DevExpress.Utils.v24.2.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
-		<Reference Include="DevExpress.XtraBars.v21.2">
-			<HintPath>..\DevExpress\.net framework\DevExpress.XtraBars.v21.2.dll</HintPath>
+		<Reference Include="DevExpress.XtraBars.v24.2">
+			<HintPath>..\DevExpress\.net framework\DevExpress.XtraBars.v24.2.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Reference>
