@@ -1,4 +1,5 @@
 ﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.LoggersTree.Properties;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Drawing;
 
 namespace Analogy.LogViewer.LoggersTree.LoggersTree
 {
-    public class PrimaryFactory : global::Analogy.LogViewer.Template.PrimaryFactory
+    public class PrimaryFactory : global::Analogy.LogViewer.Template.PrimaryFactoryWinForms
     {
         internal static readonly Guid Id = new Guid("D33BA8D1-C22E-48B0-BCA5-4EFA125A52B4");
         public override Guid FactoryId { get; set; } = Id;

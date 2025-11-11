@@ -2,57 +2,25 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-windows;net8.0-windows;net48</TargetFrameworks>
+		<VersionPrefix>9.0.0</VersionPrefix>
+		<VersionSuffix>rc1</VersionSuffix>
 		<Authors>CAMAG</Authors>
 		<Company>CAMAG</Company>
 		<Product>Analogy.LogViewer.LoggersTree</Product>
 		<PackageId>Analogy.LogViewer.LoggersTree</PackageId>
 		<IncludeSymbols>true</IncludeSymbols>
-		<Copyright>CAMAG © 2023-2025</Copyright>
+		<Copyright>CAMAG © 2023-2026</Copyright>
 		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.LoggersTree</RepositoryUrl>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageIconUrl />
 		<Description>Loggers tree extension</Description>
-		<VersionPrefix>5.1.0</VersionPrefix>
-		<VersionSuffix></VersionSuffix>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net48|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net471|AnyCPU'">
-	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.CommonUtilities" Version="8.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="8.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="8.1.0" />
-		<PackageReference Include="System.Resources.Extensions" Version="9.0.4" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.0-rc2" />
+		<PackageReference Include="Analogy.CommonUtilities" Version="9.0.0-rc2" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.0-rc4" />
+		<PackageReference Include="System.Resources.Extensions" Version="9.0.10" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
+using Analogy.Interfaces.WinForms;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Analogy.LogViewer.LoggersTree.LoggersTree
 {
-    public abstract class ExtensionLoggersTree : IAnalogyExtensionUserControl
+    public abstract class ExtensionLoggersTree : IAnalogyExtensionUserControlWinForms
     {
         public abstract Guid Id { get; set; }
         public abstract string Title { get; set; }
@@ -36,7 +37,7 @@ namespace Analogy.LogViewer.LoggersTree.LoggersTree
             return userControls[logWindowsId];
         }
 
-        Task IAnalogyExtensionUserControl.InitializeUserControl(Control hostingControl, Guid logWindowsId, ILogger logger)
+        Task IAnalogyExtensionUserControlWinForms.InitializeUserControl(Control hostingControl, Guid logWindowsId, ILogger logger)
         {
             (GetUserControl(logWindowsId) as UcLoggersTree)?.Init();
             if (hostingControl is ILogRawSQL logRawSQL)
