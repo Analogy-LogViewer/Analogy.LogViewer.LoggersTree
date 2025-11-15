@@ -1,9 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-windows;net8.0-windows;net48</TargetFrameworks>
+		<TargetFrameworks>net10.0-windows;net9.0-windows;net8.0-windows;net48</TargetFrameworks>
 		<VersionPrefix>9.0.0</VersionPrefix>
-		<VersionSuffix>rc1</VersionSuffix>
+		<VersionSuffix></VersionSuffix>
 		<Authors>CAMAG</Authors>
 		<Company>CAMAG</Company>
 		<Product>Analogy.LogViewer.LoggersTree</Product>
@@ -17,10 +16,11 @@
 		<Description>Loggers tree extension</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.0-rc2" />
-		<PackageReference Include="Analogy.CommonUtilities" Version="9.0.0-rc2" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.0-rc4" />
-		<PackageReference Include="System.Resources.Extensions" Version="9.0.10" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.2" />
+		<PackageReference Include="Analogy.CommonUtilities" Version="9.0.3" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.3" />
+		<PackageReference Include="Analogy.LogViewer.Template.WinForms" Version="9.0.3" />
+		<PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -30,7 +30,7 @@
 		</None>
 	</ItemGroup>
 
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0-windows'  or '$(TargetFramework)' == 'net9.0-windows' ">
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0-windows'  or '$(TargetFramework)' == 'net9.0-windows' or '$(TargetFramework)' == 'net10.0-windows' ">
 		<Reference Include="DevExpress.Utils.v24.2">
 			<HintPath>..\DevExpress\.net core\DevExpress.Utils.v24.2.dll</HintPath>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
