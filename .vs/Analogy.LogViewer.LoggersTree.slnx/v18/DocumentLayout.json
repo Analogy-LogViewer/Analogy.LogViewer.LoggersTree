@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\Analogy.LogViewer.LoggersTree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|solutionrelative:Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|C:\\git\\Analogy.LogViewer.LoggersTree\\.github\\workflows\\dotnet-core-desktop.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|solutionrelative:.github\\workflows\\dotnet-core-desktop.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|c:\\git\\analogy.logviewer.loggerstree\\analogy.logviewer.loggerstree\\analogy.logviewer.loggerstree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|solutionrelative:analogy.logviewer.loggerstree\\analogy.logviewer.loggerstree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|c:\\git\\analogy.logviewer.loggerstree\\analogy.logviewer.loggerstree\\loggerstree\\ucloggerstree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|solutionrelative:analogy.logviewer.loggerstree\\loggerstree\\ucloggerstree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|c:\\git\\analogy.logviewer.loggerstree\\analogy.logviewer.loggerstree\\loggerstree\\primaryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D48D17-F26B-4DD7-94B5-72C5A9D47B8D}|Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj|solutionrelative:analogy.logviewer.loggerstree\\loggerstree\\primaryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Build.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{778229A3-FA54-4CBF-86AA-8002445FAD0B}|Solution Items{778229A3-FA54-4CBF-86AA-8002445FAD0B}|solutionrelative:Directory.Build.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{da1e233c-cfa8-5021-b06c-abc3d02f44e8}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Directory.Packages.props",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Packages.props",
+              "RelativeDocumentMoniker": "Directory.Packages.props",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Packages.props",
+              "RelativeToolTip": "Directory.Packages.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-10-09T22:03:23.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UcLoggersTree.cs",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\LoggersTree\\UcLoggersTree.cs",
+              "RelativeDocumentMoniker": "Analogy.LogViewer.LoggersTree\\LoggersTree\\UcLoggersTree.cs",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\LoggersTree\\UcLoggersTree.cs",
+              "RelativeToolTip": "Analogy.LogViewer.LoggersTree\\LoggersTree\\UcLoggersTree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:52:55.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PrimaryFactory.cs",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\LoggersTree\\PrimaryFactory.cs",
+              "RelativeDocumentMoniker": "Analogy.LogViewer.LoggersTree\\LoggersTree\\PrimaryFactory.cs",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\LoggersTree\\PrimaryFactory.cs",
+              "RelativeToolTip": "Analogy.LogViewer.LoggersTree\\LoggersTree\\PrimaryFactory.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:52:37.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Directory.Build.props",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Build.props",
+              "RelativeDocumentMoniker": "Directory.Build.props",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\Directory.Build.props",
+              "RelativeToolTip": "Directory.Build.props",
+              "ViewState": "AgIAABUAAAAAAAAAAABDwCUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-11-15T15:51:37.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dotnet-core-desktop.yml",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\.github\\workflows\\dotnet-core-desktop.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\dotnet-core-desktop.yml",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\.github\\workflows\\dotnet-core-desktop.yml",
+              "RelativeToolTip": ".github\\workflows\\dotnet-core-desktop.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-11-15T15:51:00.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Analogy.LogViewer.LoggersTree.csproj",
+              "DocumentMoniker": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj",
+              "RelativeDocumentMoniker": "Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj",
+              "ToolTip": "C:\\git\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj",
+              "RelativeToolTip": "Analogy.LogViewer.LoggersTree\\Analogy.LogViewer.LoggersTree.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-09T11:54:57.07Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 532,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{8294f124-07d1-574c-bf4d-1c4a34e31c86}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5726b0e3-1012-5233-81f9-d1fad48e7a56}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1126,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ebac7c74-3b95-5b1e-b483-338a08cbadf2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -16,18 +16,18 @@
 		<Description>Loggers tree extension</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.6" />
-		<PackageReference Include="Analogy.CommonUtilities" Version="9.0.6" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.6" />
-		<PackageReference Include="Analogy.LogViewer.Template.WinForms" Version="9.0.6" />
-		<PackageReference Include="System.Resources.Extensions" Version="10.0.9" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" />
+		<PackageReference Include="Analogy.CommonUtilities" />
+		<PackageReference Include="Analogy.LogViewer.Template" />
+		<PackageReference Include="Analogy.LogViewer.Template.WinForms" />
+		<PackageReference Include="System.Resources.Extensions" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
-		<PackageReference Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
-		<PackageReference Include="PolySharp" Version="1.16.0">
+		<PackageReference Include="Microsoft.Bcl.HashCode" />
+		<PackageReference Include="Meziantou.Polyfill">
 			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
